@@ -1,7 +1,27 @@
 import React, { useState } from "react";
 import TodoList from "./components/TodoList";
 import TodoInput from "./components/TodoInput";
-import "./App.css";
+import styled from "styled-components";
+
+const MainContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #333;
+`;
+
+const CenterContainer = styled.div`
+  height: 500px;
+  width: 350px;
+`;
+
+const AppHeading = styled.h1`
+  padding: 4px;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-transform: uppercase;
+`;
 
 function App() {
   const [listTodo, setListTodo] = useState([]);
@@ -19,10 +39,10 @@ function App() {
   };
 
   return (
-    <div className="main-container">
-      <div className="center-container">
+    <MainContainer>
+      <CenterContainer>
         <TodoInput addList={addList} />
-        <h1 className="app-heading">TO-DO</h1>
+        <AppHeading>TO-DO</AppHeading>
         <hr />
         {listTodo.map((listItem, i) => {
           return (
@@ -34,8 +54,8 @@ function App() {
             />
           );
         })}
-      </div>
-    </div>
+      </CenterContainer>
+    </MainContainer>
   );
 }
 
