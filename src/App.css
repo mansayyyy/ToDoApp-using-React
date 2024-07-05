@@ -1,4 +1,4 @@
-*{
+/* *{
   margin: 0;
   padding: 0;
 }
@@ -19,7 +19,7 @@ body{
   padding: 4px;
   color: white;  
   /* text-align: center; */
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-transform: uppercase;
 }
 .input-container{
@@ -64,7 +64,7 @@ body{
 .list-item{
   list-style-type: none;
   /* background-color: #596e8b; */
-  border:2px solid rgb(161, 158, 158);
+  /* border:2px solid rgb(161, 158, 158);
   color:white;
   padding:3px;
   padding-left: 5px;
@@ -75,8 +75,8 @@ body{
   align-items: center;
   position: relative;
   margin-top: 10px;
-}
-.icons{
+} */
+/* .icons{
   position: absolute;
   right: 10px;
 }
@@ -91,4 +91,4 @@ body{
 }
 .icon-delete:hover{
   color: red;
-}
+} */
